@@ -1,6 +1,6 @@
 # Medical-Transcriptions-Classification
 
-![pic](../images/giraffes.JPG)
+![pic](..main/images/giraffes.JPG)
 
 ## Goal
 In this project we perform classification using a dissimilarity space.
