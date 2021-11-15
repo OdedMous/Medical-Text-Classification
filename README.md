@@ -1,4 +1,4 @@
-# Medical-Transcriptions-Classification
+# Medical Transcriptions Classification using Siamese Neural Network
 
 ![pic](..main/images/giraffes.JPG)
 
