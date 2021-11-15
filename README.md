@@ -1,7 +1,5 @@
 # Medical Transcriptions Classification using Siamese Neural Network
 
-![pic](..main/images/giraffes.JPG)
-
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/giraffes.jpg?raw=true)
 
 ## Goal
