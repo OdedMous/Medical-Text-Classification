@@ -16,3 +16,5 @@ Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-
 ## Sieamese Neural Network
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/giraffes.jpg?raw=true)
+
+## Results
