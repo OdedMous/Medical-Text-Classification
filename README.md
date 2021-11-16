@@ -18,3 +18,6 @@ Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/giraffes.jpg?raw=true)
 
 ## Results
+
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/model_loss.png?raw=true)
+
