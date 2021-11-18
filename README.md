@@ -3,9 +3,9 @@
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Medical_Transcription.jpg?raw=true)
 
 ## Goal
-In this project we perform classification using a dissimilarity space.
+This project goal is to build a classifier which classify medical specialties based on the thier transcription text.
 
-The main idea is to perform a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers 
+The main idea used in this project is to learn a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical transcription and predict its 
 
 ## Resources
 Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
