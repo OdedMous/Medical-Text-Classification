@@ -7,7 +7,7 @@ In this project we perform classification using a dissimilarity space.
 
 The main idea is to perform a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers 
 
-## Links
+## Resources
 Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
 
 ## Data
