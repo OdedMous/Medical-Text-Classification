@@ -1,8 +1,9 @@
-# Medical Transcriptions Classification using Dissimilarity Space
+# Clinical Text Classification using Dissimilarity Space
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Medical_Transcription.jpg?raw=true)
 
 ## Goal
+Medical Transcriptions Classification
 This project goal is to build a classifier which classify medical specialties based on the thier transcription text.
 
 ## Main Idea
