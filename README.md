@@ -5,6 +5,7 @@
 ## Goal
 This project goal is to build a classifier which classify medical specialties based on the thier transcription text.
 
+## Main Idea
 The main idea used in this project is to learn a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical transcription and predict its 
 
 ## Resources
