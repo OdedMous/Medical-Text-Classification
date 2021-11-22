@@ -14,6 +14,9 @@ The main idea used in this project is to learn a smart embedding to each medical
 ## Resources
 Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
 
+## Libaries
+Pytorch, HuggingFace, Numpy, Plotly
+
 ## Data
 
 ## Why using Dissimilarity Sapce and not Direct classifier
