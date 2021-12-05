@@ -35,7 +35,7 @@ Data contains 4966 rows, each including three main elements: <br/>
 
 One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each. 
 
-Due to limitations in time and memory, we use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms)
+Due to limitations in time and memory, we use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms).
 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/descriptions_length.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/transcriptions_length.png?raw=true) |
