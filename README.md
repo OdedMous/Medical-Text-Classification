@@ -30,7 +30,9 @@ Data contains 4966 rows, each including three main elements: <br/>
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/categories_dists.png?raw=true)|
 | --- |
-| Figure 1: Distributions of top 20 categories|
+| Figure 1: Top 20 categories|
+
+One can see that most of the categorest 
 
 Due to limitations in time and memory, we use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms)
 
