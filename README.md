@@ -25,6 +25,9 @@ Pytorch, HuggingFace, sklearn,  Numpy, Plotly
 - new categories: no need to train new model?
 - To try this method, self learing....
 
+## Scheme
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/scheme.webpg?raw=true)
+
 
 ## Sieamese Neural Network
 
