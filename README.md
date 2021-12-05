@@ -28,7 +28,7 @@ medical specialty could be
 Due to limitations in time and memory, we use descriptions rather than transcriptions (see Fig3 and Fig4, which displays the text length histograms of 
 
 
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length.png?raw=true)
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length.png?raw=true "text length")
 
 ## Why using Dissimilarity Sapce and not Direct classifier
 
