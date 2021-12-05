@@ -19,10 +19,15 @@ Pytorch, HuggingFace, sklearn,  Numpy, Plotly
 
 ## Data
 Data contains 4966 rows, each including three main columns:
-transcription -Mmedical transcription
-description - Short description of transcription
-medical_specialty - Medical specialty classification of transcription
+**transcription** - Medical transcription (text).
 
+**description** - Short description of transcription (text).
+
+**medical_specialty** - Medical specialty classification of transcription (category).
+
+medical specialty could be
+
+Due to limitations in time, we use descriptions rather than transcriptions. 
 
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length.png?raw=true)
