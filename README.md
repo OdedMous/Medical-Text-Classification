@@ -24,7 +24,8 @@ Data contains 4966 rows, each including three main elements: <br/>
 
 **description** - Short description of transcription (text).  <br/>
 
-**medical_specialty** - Medical specialty classification of transcription (category). There are 40 different categories. Figure 2 displays the distribution of the categories in the dataset.
+**medical_specialty** - Medical specialty classification of transcription (category). There are 40 different categories. <br/>
+Figure 2 displays the distribution of the categories in the dataset.
 
 
 
@@ -32,7 +33,9 @@ Data contains 4966 rows, each including three main elements: <br/>
 | --- |
 | Figure 1: Top 20 categories|
 
-One can see that most of the categorest 
+
+One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each. 
+A domain expert may reduce the number of categories by grouping similar categories together,  but we will leave the categories as they are and use dissimilarity space to deal with this issue.
 
 Due to limitations in time and memory, we use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms)
 
