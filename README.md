@@ -34,7 +34,6 @@ Data contains 4966 rows, each including three main elements: <br/>
 
 
 One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each. 
-A domain expert may reduce the number of categories by grouping similar categories together,  but we will leave the categories as they are and use dissimilarity space to deal with this issue.
 
 Due to limitations in time and memory, we use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms)
 
