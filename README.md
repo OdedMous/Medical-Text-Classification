@@ -18,6 +18,11 @@ Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-
 Pytorch, HuggingFace, sklearn,  Numpy, Plotly
 
 ## Data
+Data contains 4966 rows, each including three main columns:
+transcription -Mmedical transcription
+description - Short description of transcription
+medical_specialty - Medical specialty classification of transcription
+
 
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length.png?raw=true)
