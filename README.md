@@ -39,7 +39,9 @@ Due to limitations in time and memory, we use descriptions rather than transcrip
 - To try this method, self learing....
 
 ## Scheme
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Scheme.png?raw=true)
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Scheme.png?raw=true) |
+| --- |
+| Training Scheme |
 
 
 ## Sieamese Neural Network
