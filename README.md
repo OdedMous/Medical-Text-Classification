@@ -19,13 +19,18 @@ Pytorch, HuggingFace, sklearn,  Numpy, Plotly
 
 ## Data
 Data contains 4966 rows, each including three main elements: <br/>
+
 **transcription** - Medical transcription of some patient (text).  <br/>
+
 **description** - Short description of transcription (text).  <br/>
+
 **medical_specialty** - Medical specialty classification of transcription (category). There are 40 different categories. Figure 2 displays the distribution of the categories in the dataset.
 
 
+
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/categories_dists.png?raw=true)|
-| Figure 1: Categories Distribution |
+| --- |
+| Figure 1: Distributions of top 20 categories|
 
 Due to limitations in time and memory, we use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms)
 
