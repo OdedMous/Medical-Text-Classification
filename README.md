@@ -22,12 +22,11 @@ Data contains 4966 rows, each including three main elements: <br/>
 
 **transcription** - Medical transcription of some patient (text).  <br/>
 
-**description** - Short description of transcription (text).  <br/>
+**description** - Short description of the transcription (text).  <br/>
 
-**medical_specialty** - Medical specialty classification of transcription (category). There are 40 different categories. <br/>
-Figure 2 displays the distribution of the categories in the dataset.
+**medical_specialty** - Medical specialty classification of transcription (category). There are 40 different categories. Figure 2 displays the distribution of the top 20 categories in the dataset.
 
-
+<br/>
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/categories_dists.png?raw=true)|
 | --- |
