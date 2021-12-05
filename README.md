@@ -19,6 +19,9 @@ Pytorch, HuggingFace, sklearn,  Numpy, Plotly
 
 ## Data
 
+
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length.png?raw=true)
+
 ## Why using Dissimilarity Sapce and not Direct classifier
 
 - imbalanced data
