@@ -26,7 +26,7 @@ Pytorch, HuggingFace, sklearn,  Numpy, Plotly
 - To try this method, self learing....
 
 ## Scheme
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/scheme.png?raw=true)
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Scheme.png?raw=true)
 
 
 ## Sieamese Neural Network
