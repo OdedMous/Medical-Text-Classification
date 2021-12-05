@@ -40,9 +40,9 @@ A domain expert may reduce the number of categories by grouping similar categori
 Due to limitations in time and memory, we use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms)
 
 
-| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length_transcription.png?raw=true) |
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/descriptions_length.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/transcriptions_length.png?raw=true) |
 | --- | --- |
-| **Figure 2**:  text length discription| **Figure 3**: text length transcription|
+| **Figure 2**: Description texts length| **Figure 3**: Transcription texts length|
 
 ## Why using Dissimilarity Sapce and not Direct classifier
 
