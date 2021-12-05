@@ -31,7 +31,7 @@ Figure 2 displays the distribution of the categories in the dataset.
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/categories_dists.png?raw=true)|
 | --- |
-| Figure 1: Top 20 categories|
+| **Figure 1**: Top 20 categories|
 
 
 One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each. 
@@ -42,7 +42,7 @@ Due to limitations in time and memory, we use descriptions rather than transcrip
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/text_length_transcription.png?raw=true) |
 | --- | --- |
-| Figure 2:  text length discription| Figure 3: text length transcription|
+| **Figure 2**:  text length discription| **Figure 3**: text length transcription|
 
 ## Why using Dissimilarity Sapce and not Direct classifier
 
