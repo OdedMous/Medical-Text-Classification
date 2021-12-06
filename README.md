@@ -20,7 +20,7 @@ The idea is adapted from [1], with the necessary adjustments because text data i
 Pytorch, HuggingFace, sklearn,  Numpy, Plotly
 
 ## Data
-Data contains 4966 records, each including three main elements: <br/>
+The original data contains 4966 records, each including three main elements: <br/>
 
 **transcription** - Medical transcription of some patient (text).  <br/>
 
