@@ -9,7 +9,9 @@ This project goal is to build a classifier which classify medical specialties ba
 ## Motivation
 
 ## Main Idea
-The main idea used in this project is to learn a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical transcription and predict its 
+The main idea used in this project is to learn a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical transcription and predict its...
+
+The idea is adapted from [1], with the necessary adjustments because text data is used in our case instead of images data.
 
 ## Resources
 [1] Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
