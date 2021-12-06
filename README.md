@@ -26,7 +26,8 @@ Data contains 4966 rows, each including three main elements: <br/>
 
 **description** - Short description of the transcription (text).  <br/>
 
-**medical_specialty** - Medical specialty classification of transcription (category). There are 40 different categories. Figure 2 displays the distribution of the top 20 categories in the dataset.
+**medical_specialty** - Medical specialty classification of transcription (category). There are 40 different categories.
+Figure 1 displays the distribution of the top 20 categories in the dataset.
 
 <br/>
 
