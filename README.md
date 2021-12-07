@@ -52,15 +52,39 @@ Due to limitations in time and memory, I use descriptions rather than transcript
 - To try this method, self learing....
 
 ## Scheme
+The training procedure consists of several steps which are schematized in Figure 4.
+
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Scheme.png?raw=true) |
 | --- |
-| Training Scheme |
+| **Figure 4**: Training Scheme |
 
-**Projection in the Dissimilarity Space**
-In the phase the data is projected into dissimilarity space. Each sample is represented by
-by its similarity to a selected set of prototypes P=p1,...pk by a dissimilarity vector:
+**Siamese Neural Network (SNN) Training** <br/>
+The purpose of this phase is to learn a distance measure d(x,y) by maximizing the similarity between couples of samples in the same category, while minimizing the similarity for couples in different categories. <br/>
+Our siamese network model consists of several components:
+
+- Two identical twin subnetworks <br/>
+two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed, see [2]) followed by a FF layer for fine-tuning.
+- Subtract Block <br/>
+Subtracting the output feature vectors of the subnetworks yields a feature vector Y representing the difference between the texts: Y = | f1 - f2 |
+- Fully Connected Layer (FCL) <br/>
+Learn the distance model to calculate the dissimilarity. The output vector of the subtract block is fed to the FCL which returns a dissimilarity value for the pair of texts in the input.Then  a sigmoid function is applied  to the dissimilarity value to convert it to a probability value in the range [0, 1].
+
+
+Binary Cross Entropy
+
+
+**Prototype Selection** <br/>
+In this phase, K prototypes are extracted from the training set. As the autores of [1] stated, it is not practical to take every sample in the training as a prototype. Alternatively, m centroids for each category separately are computed by clustering technique. This reduces the prototype list from the size of the training sample (K=n) to K=m*C (C=number of categories). I chose K-means for the clustering algorithm.
+
+In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize the embedding layers of the trained SNN to retrieve the feature vectors of every training sample.
+
+**Projection in the Dissimilarity Space** <br/>
+In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space,we calculate the  similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector:
 F(x)=[d(x,pi),d(x,pi+1),...,d(x,pk)],
-where the similarity among pattern d(x,y) is obtained using a trained SNN.
+The similarity among a sample and a prototype d(x,y) is obtained using the trained SNN.
+
+**SVM Classifiers** <br/>
+In this phase an ensemble of SVMs are trained using a One-Against-All approach: For each category an SVM is trained to discriminate between this category and all the other categories put together. The sample is then assigned to the category that gives the highest confidence score. The inputs for the classifiers are the projected train data.
 
 
 ## Sieamese Neural Network
