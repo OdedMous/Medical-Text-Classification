@@ -58,7 +58,7 @@ The training procedure consists of several steps which are schematized in Figu
 | --- |
 | **Figure 4**: Training Scheme |
 
-**Siamese Neural Network (SNN) Training** <br/>
+**(2) Siamese Neural Network (SNN) Training** <br/>
 The purpose of this phase is to learn a distance measure d(x,y) by maximizing the similarity between couples of samples in the same category, while minimizing the similarity for couples in different categories. <br/>
 Our siamese network model consists of several components:
 
@@ -74,17 +74,17 @@ Learn the distance model to calculate the dissimilarity. The output vector of th
 Binary Cross Entropy
 
 
-**Prototype Selection** <br/>
+**(3-4) Prototype Selection** <br/>
 In this phase, K prototypes are extracted from the training set. As the autores of [1] stated, it is not practical to take every sample in the training as a prototype. Alternatively, m centroids for each category separately are computed by clustering technique. This reduces the prototype list from the size of the training sample (K=n) to K=m*C (C=number of categories). I chose K-means for the clustering algorithm.
 
 In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize the embedding layers of the trained SNN to retrieve the feature vectors of every training sample.
 
-**Projection in the Dissimilarity Space** <br/>
+**(5) Projection in the Dissimilarity Space** <br/>
 In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space,we calculate the  similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector: <br/>
 F(x)=[d(x,pi),d(x,pi+1),...,d(x,pk)] <br/>
 The similarity among a sample and a prototype d(x,y) is obtained using the trained SNN.
 
-**SVM Classifiers** <br/>
+**(6) SVM Classifiers** <br/>
 In this phase an ensemble of SVMs are trained using a One-Against-All approach: For each category an SVM is trained to discriminate between this category and all the other categories put together. The sample is then assigned to the category that gives the highest confidence score. The inputs for the classifiers are the projected train data.
 
 
