@@ -57,6 +57,8 @@ Due to limitations in time and memory, I use descriptions rather than transcript
 | Training Scheme |
 
 
+
+
 ## Sieamese Neural Network
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/giraffes.jpg?raw=true)
