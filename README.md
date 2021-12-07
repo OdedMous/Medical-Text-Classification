@@ -56,7 +56,11 @@ Due to limitations in time and memory, I use descriptions rather than transcript
 | --- |
 | Training Scheme |
 
-
+**Projection in the Dissimilarity Space**
+In the phase the data is projected into dissimilarity space. Each sample is represented by
+by its similarity to a selected set of prototypes P=p1,...pk by a dissimilarity vector:
+F(x)=[d(x,pi),d(x,pi+1),...,d(x,pk)],
+where the similarity among pattern d(x,y) is obtained using a trained SNN.
 
 
 ## Sieamese Neural Network
