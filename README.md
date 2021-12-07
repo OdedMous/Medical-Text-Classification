@@ -80,8 +80,8 @@ In this phase, K prototypes are extracted from the training set. As the autore
 In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize the embedding layers of the trained SNN to retrieve the feature vectors of every training sample.
 
 **Projection in the Dissimilarity Space** <br/>
-In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space,we calculate the  similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector:
-F(x)=[d(x,pi),d(x,pi+1),...,d(x,pk)],
+In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space,we calculate the  similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector: <br/>
+F(x)=[d(x,pi),d(x,pi+1),...,d(x,pk)] <br/>
 The similarity among a sample and a prototype d(x,y) is obtained using the trained SNN.
 
 **SVM Classifiers** <br/>
