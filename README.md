@@ -62,11 +62,11 @@ The training procedure consists of several steps which are schematized in Figu
 The purpose of this phase is to learn a distance measure d(x,y) by maximizing the similarity between couples of samples in the same category, while minimizing the similarity for couples in different categories. <br/>
 Our siamese network model consists of several components:
 
-- Two identical twin subnetworks <br/>
+- **Two identical twin subnetworks** <br/>
 two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed, see [2]) followed by a FF layer for fine-tuning.
-- Subtract Block <br/>
-Subtracting the output feature vectors of the subnetworks yields a feature vector Y representing the difference between the texts: Y = | f1 - f2 |
-- Fully Connected Layer (FCL) <br/>
+- **Subtract Block** <br/>
+Subtracting the output feature vectors of the subnetworks yields a feature vector Y representing the difference between the texts: Y = | f1 - f2 | <br/>
+- **Fully Connected Layer** (FCL) <br/>
 Learn the distance model to calculate the dissimilarity. The output vector of the subtract block is fed to the FCL which returns a dissimilarity value for the pair of texts in the input.Then  a sigmoid function is applied  to the dissimilarity value to convert it to a probability value in the range [0, 1].
 
 
