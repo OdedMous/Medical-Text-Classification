@@ -77,15 +77,15 @@ Binary Cross Entropy
 **(3-4) Prototype Selection** <br/>
 In this phase, K prototypes are extracted from the training set. As the autores of [1] stated, it is not practical to take every sample in the training as a prototype. Alternatively, m centroids for each category separately are computed by clustering technique. This reduces the prototype list from the size of the training sample (K=n) to K=m*C (C=number of categories). I chose K-means for the clustering algorithm.
 
-In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize the embedding layers of the trained SNN to retrieve the feature vectors of every training sample.
+In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize the **embedding layers** (???) of the trained SNN to retrieve the feature vectors of every training sample.
 
 **(5) Projection in the Dissimilarity Space** <br/>
-In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space,we calculate the  similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector: <br/>
+In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space, we calculate the similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector: <br/>
 F(x)=[d(x,pi),d(x,pi+1),...,d(x,pk)] <br/>
 The similarity among a sample and a prototype d(x,y) is obtained using the trained SNN.
 
 **(6) SVM Classifiers** <br/>
-In this phase an ensemble of SVMs are trained using a One-Against-All approach: For each category an SVM is trained to discriminate between this category and all the other categories put together. The sample is then assigned to the category that gives the highest confidence score. The inputs for the classifiers are the projected train data.
+In this phase an ensemble of SVMs are trained using a One-Against-All approach: For each category an SVM classifier is trained to discriminate between this category and all the other categories put together. A sample is then assigned to the category that gives the highest confidence score. The inputs for the classifiers are the projected train data.
 
 
 ## Sieamese Neural Network
