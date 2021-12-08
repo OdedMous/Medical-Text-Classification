@@ -4,7 +4,7 @@
 
 ## Goal
 
-This project goal is to develop a classifier that given a transcription text  classifies its medical specialty.
+This project goal is to develop a classifier that given a medical transcription text classifies its medical specialty.
 
 ## Data
 The original data contains 4966 records, each including three main elements: <br/>
