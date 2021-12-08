@@ -4,7 +4,7 @@
 
 ## Goal
 
-This project goal is to build a classifier which classify medical specialties based on the thier transcription text.
+This project goal is to develop a classifier that given a transcription text  classifies its medical specialty.
 
 ## Motivation
 
