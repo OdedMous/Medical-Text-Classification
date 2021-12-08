@@ -59,8 +59,7 @@ The training procedure consists of several steps which are schematized in Figu
 | **Figure 4**: Training Scheme |
 
 **(1) Training Set**  <br/>
-We build a customized data loader from the original dataset. It produces pairs of samples with a probability of 0.5 that both are from the same category. 
-
+The original train set is used to build a customized data loader. It produces pairs of samples with a probability of 0.5 that both samples belong to the same category.
 
 **(2) Siamese Neural Network (SNN) Training** <br/>
 The purpose of this phase is to learn a distance measure d(x,y) by maximizing the similarity between couples of samples in the same category, while minimizing the similarity for couples in different categories. <br/>
