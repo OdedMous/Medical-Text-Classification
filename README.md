@@ -6,19 +6,6 @@
 
 This project goal is to develop a classifier that given a transcription text  classifies its medical specialty.
 
-## Motivation
-
-## Main Idea
-The main idea used in this project is to learn a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical transcription and predict its...
-
-The idea is adapted from [1], with the necessary adjustments because text data is used in this project instead of images data.
-
-## Resources
-[1] Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
-
-## Libaries
-Pytorch, HuggingFace, sklearn,  Numpy, Plotly
-
 ## Data
 The original data contains 4966 records, each including three main elements: <br/>
 
@@ -45,11 +32,11 @@ Due to limitations in time and memory, I use descriptions rather than transcript
 | --- | --- |
 | **Figure 2**: Description texts length| **Figure 3**: Transcription texts length|
 
-## Why using Dissimilarity Sapce and not Direct classifier
 
-- imbalanced data
-- new categories: no need to train new model?
-- To try this method, self learing....
+## Main Idea
+The main idea used in this project is to learn a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical transcription and predict its...
+
+The idea is adapted from [1], with the necessary adjustments because text data is used in this project instead of images data.
 
 ## Scheme
 The training procedure consists of several steps which are schematized in Figure 4.
@@ -90,12 +77,21 @@ The similarity among a sample and a prototype d(x,y) is obtained using the train
 **(6) SVM Classifiers** <br/>
 In this phase an ensemble of SVMs are trained using a One-Against-All approach: For each category an SVM classifier is trained to discriminate between this category and all the other categories put together. A sample is then assigned to the category that gives the highest confidence score. The inputs for the classifiers are the projected train data.
 
+## Why using Dissimilarity Sapce and not Direct classifier
 
-## Sieamese Neural Network
-
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/giraffes.jpg?raw=true)
+- imbalanced data
+- new categories: no need to train new model?
+- To try this method, self learing....
 
 ## Results
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/model_loss.png?raw=true)
+
+
+## Libaries
+Pytorch, HuggingFace, sklearn,  Numpy, Plotly
+
+## Resources
+[1] Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
+
 
