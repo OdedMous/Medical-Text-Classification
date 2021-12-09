@@ -53,7 +53,7 @@ The purpose of this phase is to learn a distance measure d(x,y) by maximizing 
 Our siamese network model consists of several components:
 
 - **Two identical twin subnetworks** <br/>
-two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed, see [2]) followed by a FF layer for fine-tuning.
+two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed and text articles from PubMedCentral, see [2]) followed by a FF layer for fine-tuning.
 - **Subtract Block** <br/>
 Subtracting the output feature vectors of the subnetworks yields a feature vector Y representing the difference between the texts: <br/>
 Y = | f1 - f2 | <br/>
