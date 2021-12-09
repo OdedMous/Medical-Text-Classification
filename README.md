@@ -99,6 +99,12 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 
 - make the dataloader sample equally from all classes ?
 
+- learning rate: use sceduler = scyclic learning rate
+
+- btach size
+
+- loss function
+
 
 ## Libaries
 Pytorch, HuggingFace, sklearn,  Numpy, Plotly
