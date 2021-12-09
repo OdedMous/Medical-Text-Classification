@@ -67,7 +67,7 @@ Binary Cross Entropy
 **(3-4) Prototype Selection** <br/>
 In this phase, K prototypes are extracted from the training set. As the autores of [1] stated, it is not practical to take every sample in the training as a prototype. Alternatively, m centroids for each category separately are computed by clustering technique. This reduces the prototype list from the size of the training sample (K=n) to K=m*C (C=number of categories). I chose K-means for the clustering algorithm.
 
-In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize the **embedding layers** (???) of the trained SNN to retrieve the feature vectors of every training sample.
+In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize one fo the subnetwork of the trained SNN to retrieve the feature vectors of every training sample (recall that the subnetwork gives us an embedded vector which represent the input text).
 
 **(5) Projection in the Dissimilarity Space** <br/>
 In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space, we calculate the similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector: <br/>
