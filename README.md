@@ -87,6 +87,16 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/model_loss.png?raw=true)
 
+## TODO
+
+- -instead of using the description (less accurate than the transcription)  or using the full transcription (too heavy), sample from the transcription a text of 512 characters (kind of augmentation).
+
+- change the architecture:
+- - discard finetuning FF layer - didn't work
+- - decrease the dimension of finetuning layer - didn't work
+- - increase the dimension of finetunning layer - 
+- - change to rnn instead of bert
+
 
 ## Libaries
 Pytorch, HuggingFace, sklearn,  Numpy, Plotly
