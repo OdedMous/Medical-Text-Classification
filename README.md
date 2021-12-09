@@ -53,7 +53,7 @@ The purpose of this phase is to learn a distance measure d(x,y) by maximizing 
 Our siamese network model consists of several components:
 
 - **Two identical twin subnetworks** <br/>
-two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed and text articles from PubMedCentral, see [2]) followed by a FF layer for fine-tuning.
+two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed and on full-text articles from PubMedCentral, see [2]) followed by a FF layer for fine-tuning.
 - **Subtract Block** <br/>
 Subtracting the output feature vectors of the subnetworks yields a feature vector Y representing the difference between the texts: <br/>
 Y = | f1 - f2 | <br/>
@@ -91,11 +91,17 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 
 - -instead of using the description (less accurate than the transcription)  or using the full transcription (too heavy), sample from the transcription a text of 512 characters (kind of augmentation).
 
+- reduce the number of categories to 2
+
 - change the architecture:
   - discard finetuning FF layer - didn't work
-  - decrease the dimension of finetuning layer - didn't work
-  - increase the dimension of finetunning layer - 
-  - change to rnn instead of bert
+  - decrease the dimension of finetuning layer to 64 - didn't work
+  - increase the dimension of finetunning layer to 512 - 
+  - change to rnn instead of bert - 
+
+- train with keras
+
+- train on other dataset (simpler dataset)
 
 - make the dataloader sample equally from all classes ?
 
