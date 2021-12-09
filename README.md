@@ -89,6 +89,9 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 
 ## TODO
 
+- Add another layer of finetuning FF (if the SNN doesnt learn we should try yo increase its power. More parametrs = more power)
+
+
 - -instead of using the description (less accurate than the transcription)  or using the full transcription (too heavy), sample from the transcription a text of 512 characters (kind of augmentation).
 
 - reduce the number of categories to 2
