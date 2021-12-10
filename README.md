@@ -91,6 +91,8 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 Problem: 
 if the training loss is not decreasing, chances are the model is too simple for the data. The other possibility is that our data just doesn’t contain meaningful information that lets it explain the output
 
+- change to "transcription" of size 512 - didn't work (stucked on 0.6)
+
 - Check the bert embedding on the train set (plot it on 3d and see if the categories are seperated)
 -
 - check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
