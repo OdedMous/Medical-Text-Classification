@@ -98,8 +98,8 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 
 - change the architecture:
   - discard finetuning FF layer - didn't work
-  - decrease the dimension of finetuning layer to 64 - didn't work
-  - increase the dimension of finetunning layer to 512 - 
+  - decrease the dimension of finetuning layer from 128 to 64 - didn't work
+  - increase the dimension of finetunning layer from 128 to 512 - didn't work
   - change to rnn instead of bert - 
 
 - train with keras
