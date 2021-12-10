@@ -91,6 +91,10 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 Problem: 
 if the training loss is not decreasing, chances are the model is too simple for the data. The other possibility is that our data just doesn’t contain meaningful information that lets it explain the output
 
+- Check the bert embedding on the train set (plot it on 3d and see if the categories are seperated)
+-
+- check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
+
 - Add another layer of finetuning FF (if the SNN doesnt learn we should try yo increase its power. More parametrs = more power)
 
 - reduce number of categories to 2 - it went from 0.6 to 0.3 but them stop there
