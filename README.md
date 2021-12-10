@@ -88,6 +88,8 @@ In this phase an ensemble of SVMs are trained using a One-Against-All approach
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/model_loss.png?raw=true)
 
 ## TODO
+Problem: 
+if the training loss is not decreasing, chances are the model is too simple for the data. The other possibility is that our data just doesn’t contain meaningful information that lets it explain the output
 
 - Add another layer of finetuning FF (if the SNN doesnt learn we should try yo increase its power. More parametrs = more power)
 
