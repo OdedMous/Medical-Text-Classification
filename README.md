@@ -115,6 +115,7 @@ if the training loss is not decreasing, chances are the model is too simple for 
 - train with keras
 
 - train on other dataset (simpler dataset)
+  - spam dataset (2 caegories) - 20 epochs stuck around 0.2
 
 - make the dataloader sample equally from all classes ?
 
