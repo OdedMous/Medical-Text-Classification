@@ -36,7 +36,7 @@ Due to limitations in time and memory, I use descriptions rather than transcript
 
 
 ## Main Idea
-The main idea used in this project is to learn a smart embedding to each medical transcription in the training set, and then use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical transcription and predict its...
+The main idea used in this project is to learn a smart embedding to each medical description in the training set, and use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical description and predict its medical specialty.
 
 The idea is adapted from [1], with the necessary adjustments because text data is used in this project instead of images.
 
@@ -61,7 +61,6 @@ Subtracting the output feature vectors of the subnetworks yields a feature vecto
 Y = | f1 - f2 | <br/>
 - **Fully Connected Layer (FCL)** <br/>
 Learn the distance model to calculate the dissimilarity. The output vector of the subtract block is fed to the FCL which returns a dissimilarity value for the pair of texts in the input. Then a sigmoid function is applied  to the dissimilarity value to convert it to a probability value in the range [0, 1].
-
 
 Binary Cross Entropy
 
