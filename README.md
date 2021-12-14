@@ -123,39 +123,41 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 Problem: 
 if the training loss is not decreasing, chances are the model is too simple for the data. The other possibility is that our data just doesn’t contain meaningful information that lets it explain the output
 
-- change to "transcription" of size 512 - didn't work (stucked on 0.6)
-
-- Check the bert embedding on the train set (plot it on 3d and see if the categories are seperated)
--
-- check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
-
-- Add another layer of finetuning FF (if the SNN doesnt learn we should try yo increase its power. More parametrs = more power)
-
-- reduce number of categories to 2 - it went from 0.6 to 0.3 but them stop there
+- Hyperparametrs
+  - learning rate: use sceduler = scyclic learning rate
+  - btach size
+  - loss function
+  - optimizer
 
 
-- -instead of using the description (less accurate than the transcription)  or using the full transcription (too heavy), sample from the transcription a text of 512 characters (kind of augmentation).
+- Data
 
-- reduce the number of categories to 2
+  - reduce number of categories to 2 - it went from 0.6 to 0.3 but them stop there
+  - instead of using the description (less accurate than the transcription)  or using the full transcription (too heavy), sample from the transcription a text of 512 characters  (kind of augmentation).
+  - train on other dataset (simpler dataset)
+  - spam dataset (2 caegories) - 20 epochs stuck around 0.2
+  - make the dataloader sample equally from all classes ?
+  - change to "transcription" of size 512 - didn't work (stucked on 0.6)
 
-- change the architecture:
+
+
+
+- Architecture
+
   - discard finetuning FF layer - didn't work
   - decrease the dimension of finetuning layer from 128 to 64 - didn't work
   - increase the dimension of finetunning layer from 128 to 512 - didn't work
   - change to rnn instead of bert - 
+  - change to idftf instead of bert
+  - change distance layer (to cosine distance maybe)
+  - Check the bert embedding on the train set (plot it on 3d and see if the categories are seperated)
+  - check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
+  - Add another layer of finetuning FF (if the SNN doesnt learn we should try yo increase its power. More parametrs = more power)
 
-- train with keras
+- General
+  - train with keras
 
-- train on other dataset (simpler dataset)
-  - spam dataset (2 caegories) - 20 epochs stuck around 0.2
 
-- make the dataloader sample equally from all classes ?
-
-- learning rate: use sceduler = scyclic learning rate
-
-- btach size
-
-- loss function
 
 
 ## Libaries
