@@ -50,7 +50,7 @@ The main data contains 1540 records, and is divided into 70% train set, 15% vali
 | --- |
 | **Figure 2**: Selected categories|
 
-Due to limitations in time and memory, I use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays the text lengths histograms).
+One can try either the descriptions or the transcriptions (or both) as the samples, but due to limitations in time and memory I use only the descriptions (see Figure 3 and Figure 4, which displays the text lengths histograms).
 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/descriptions_length.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/transcriptions_length.png?raw=true) |
