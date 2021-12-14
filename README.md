@@ -90,7 +90,17 @@ We will evaluate the full procedure using two tecniques:
 
 ## Results
 
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/model_loss.png?raw=true)
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/SNN_loss.png?raw=true)
+
+**3d_embedded_train_mat**
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_embedded_train_mat.png?raw=true)
+
+**test_confusion_mat**
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true)
+
+**unseen_test_confusion_mat**
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true)
+
 
 ## TODO
 Problem: 
