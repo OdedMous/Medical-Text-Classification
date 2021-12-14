@@ -93,8 +93,8 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
  - Feed the projected test set into the trained SVM classifiers, and examine the results.
 
 **B) "Unseen" test set** - this dataset includes texts that their categories **don't appear** in the train categories (hence the name "unseen"). We use this dataset to check whatever the trained SNN model can be utilized to measure the distance between texts that belong to "unseen" categories (and then, eventually, classify correctly their category). We check this in the following way: <br/>
- - Split the "unseen" test set into train and test sets. <br/>
- - Perform steps 3,4,5,6 in the training phase on the train set. Note that we don't train the SNN model agian.
+ - Split the "unseen" test set into train and test sets. 
+ - Perform steps 3,4,5,6 in the training phase on the train set. Note that we don't train the SNN model agian.
  - Predict the test set categories as we do in A). 
 
 ## Results
