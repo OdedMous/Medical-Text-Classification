@@ -169,13 +169,13 @@ if the training loss is not decreasing, chances are the model is too simple for 
 
 
 - Architecture
-
+  - **increase the complexity of the model - more FF layers / 1d convolution**
+  - - **change distance layer (to cosine distance maybe)**
   - discard finetuning FF layer - didn't work
   - decrease the dimension of finetuning layer from 128 to 64 - didn't work
   - increase the dimension of finetunning layer from 128 to 512 - didn't work
   - change to rnn instead of bert - 
   - change to idftf instead of bert
-  - change distance layer (to cosine distance maybe)
   - Check the bert embedding on the train set (plot it on 3d and see if the categories are seperated)
   - check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
   - Add another layer of finetuning FF (if the SNN doesnt learn we should try yo increase its power. More parametrs = more power)
