@@ -43,7 +43,7 @@ So we process the dataset as follows:
 
 12 categories remained, and we take the most common 5 categories to be the main data (see Figure 2). The rest left out for evaluation purposes (see Evaluation section point B.).
 
-The main data contains 1540 records, and are split into 70% train set, 15% validation set, and 15% test set.
+The main data contains 1540 records, and is divided into 70% train set, 15% validation set, and 15% test set.
 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/selected_categories_dist.png?raw=true)|
