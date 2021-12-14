@@ -29,25 +29,29 @@ One can see that the dataset is very unbalanced - most categories represent less
 In addition some categories can be considered as 
 (for example "Surgery" category is kind of superset as there can be surgeries belonging to specializations like cardiology,neurolrogy etc)
 
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/selected_categories_dists.png?raw=true)|
+| --- |
+| **Figure 2**: Selected categories|
+
 Due to limitations in time and memory, I use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms).
 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/descriptions_length.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/transcriptions_length.png?raw=true) |
 | --- | --- |
-| **Figure 2**: Description texts length| **Figure 3**: Transcription texts length|
+| **Figure 3**: Description texts length| **Figure 4**: Transcription texts length|
 
 
 ## Main Idea
 The main idea used in this project is to learn a smart embedding to each medical description in the training set, and use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical description and predict its medical specialty.
 
-The idea is adapted from [1] with some adjustments because text data is used in this project instead of images.
+The idea is adapted from the paper "Spectrogram Classification Using Dissimilarity Space" [1] with some adjustments because text data is used in this project instead of images.
 
 ## Scheme
-The training procedure consists of several steps which are schematized in Figure 4.
+The training procedure consists of several steps which are schematized in Figure 5.
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Scheme.png?raw=true) |
 | --- |
-| **Figure 4**: Training Scheme |
+| **Figure 5**: Training Scheme |
 
 **(1) Training Set**  <br/>
 The original train set is used to build a customized data loader. It produces pairs of samples with a probability of 0.5 that both samples belong to the same category.
