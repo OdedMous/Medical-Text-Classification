@@ -25,9 +25,16 @@ There are 40 different categories. Figure 1 displays the distribution of the top
 | **Figure 1**: Top 20 categories|
 
 
-One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each.  
-In addition some categories can be considered as 
-(for example "Surgery" category is kind of superset as there can be surgeries belonging to specializations like cardiology,neurolrogy etc)
+One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each. <br/>  
+So we process the dataset as follows:
+- Drop categories with less than 50 samples.
+- Drop "general" categories (For example, the "Surgery" category is kind of a general category as there can be surgeries belonging to specializations like cardiology, neurology etc. ).
+- Combine " Neurology" and " Neurosurgery" categories into a single category.
+
+12 categories remained, and we take the most common 5 categories to be the main data. The rest left out for evaluation purposes (see Evaluation section point B.).
+
+The main data contains 1540 records, and are split into 70% train set, 15% validation set, and 15% test set.
+
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/selected_categories_dist.png?raw=true)|
 | --- |
