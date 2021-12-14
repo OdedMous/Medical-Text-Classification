@@ -104,6 +104,9 @@ We will evaluate the full procedure using two tecniques:
 **unseen_test_confusion_mat**
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true)
 
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)
+
+
 
 ## TODO
 Problem: 
