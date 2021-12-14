@@ -16,7 +16,8 @@ The original data contains 4966 records, each including three main elements: <br
 **description** - Short description of the transcription (text).  <br/>
 
 **medical_specialty** - Medical specialty classification of transcription (category).  <br/>
-                        There are 40 different categories. Figure 1 displays the distribution of the top 20 categories in the dataset.
+                        
+There are 40 different categories. Figure 1 displays the distribution of the top 20 categories in the dataset.
 
 <br/>
 
