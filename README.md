@@ -49,7 +49,7 @@ The idea is adapted from the paper "Spectrogram Classification Using Dissimilari
 ## Scheme
 The training procedure consists of several steps which are schematized in Figure 5.
 
-| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Scheme.png?raw=true) |
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Training_Scheme.png?raw=true) |
 | --- |
 | **Figure 5**: Training Scheme |
 
