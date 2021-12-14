@@ -146,15 +146,18 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 
 
 ## TODO
-Problem: 
-if the training loss is not decreasing (the network stop learninf), chances are:
-- we reached into local minmum (decrease/increase learning rate)
+**Problem:**
+The training loss is not decreasing (the network stop learning). Possibole reasons:
+- we reached into a local minmum (decrease/increase learning rate)
 - the model is too simple for the data. 
 - our data just doesn’t contain meaningful information that lets it explain the output
 
-Conclusion so far:
+**Conclusion so far:**
 - with only 2 categories the loss decresed from 0.6 to 0.2.
 - so maybe if we will do more complex network it will help for 5 categories.
+
+
+**What to change:**
 
 - Hyperparametrs
   - learning rate: use sceduler = scyclic learning rate
@@ -171,8 +174,6 @@ Conclusion so far:
   - spam dataset (2 caegories) - 20 epochs stuck around 0.2
   - make the dataloader sample equally from all classes ?
   - change to "transcription" of size 512 - didn't work (stucked on 0.6)
-
-
 
 
 - Architecture
