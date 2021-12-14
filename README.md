@@ -2,13 +2,11 @@
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Medical_Transcription.jpg?raw=true)
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| :------------ |:---------------:| -----:|
-| col 2 is      | centered        |   $12 |
-| :------------ |:---------------:| -----:|
-| zebra stripes | are neat        |    $1 |
+| Attempt | #1  | #2  |
+| ------- | --- | --- |
+| Seconds | 301 | 283 |
+| ------- | --- | --- |
+| Seconds | 301 | 283 |
 
 ## Goal
 
