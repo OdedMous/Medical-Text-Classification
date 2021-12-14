@@ -85,7 +85,7 @@ Y = | f1 - f2 | <br/>
 - **Fully Connected Layer (FCL)** <br/>
 Learn the distance model to calculate the dissimilarity. The output vector of the subtract block is fed to the FCL which returns a dissimilarity value for the pair of texts in the input. Then a sigmoid function is applied  to the dissimilarity value to convert it to a probability value in the range [0, 1].
 
-We use Binary Cross Entropy as a loss function. Note that in the original siamese neural network paper ([3]) the authors used various loss function which can consider more then two samples......................
+We use Binary Cross Entropy as the loss function. Note that in the original siamese neural network paper ([3]) the authors used various loss function which can consider more then two samples......................
 
 
 **(3-4) Prototype Selection** <br/>
