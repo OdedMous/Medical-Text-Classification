@@ -11,11 +11,15 @@ This project goal is to develop a classifier that given a medical transcription 
 ## Data
 The original data contains 4966 records, each including three main elements: <br/>
 
-**transcription** - Medical transcription of some patient (text).  <br/>
+**Transcription** - Medical transcription of some patient (text).  <br/>
 
-**description** - Short description of the transcription (text).  <br/>
+**Description** - Short description of the transcription (text).  <br/>
 
-**medical_specialty** - Medical specialty classification of transcription (category).  <br/>
+**Medical Specialty** - Medical specialty classification of transcription (category).  <br/>
+
+|Description | Transcription |Medical Specialty|
+|---|---|---|
+| 2-D M-Mode. Doppler.| SUBJECTIVE:,  This 23-year-old white female presents with complaint of allergies.  She used to have allergies when she lived in Seattle but she thinks they are worse here.  In the past, she has tried Claritin, and Zyrtec.  Both worked for short time but then seemed to lose effectiveness.  She has used Allegra also.  She used that last summer and she began using it again two weeks ago.  It does not appear to be working very well.  She has used over-the-counter sprays but no prescription nasal sprays.  She does have asthma but doest not require daily medication for this and does not think it is flaring up.,MEDICATIONS: , Her only medication currently is Ortho Tri-Cyclen and the Allegra.,ALLERGIES: , She has no known medicine allergies.,OBJECTIVE:,Vitals:  Weight was 130 pounds and blood pressure 124/78.,HEENT:  Her throat was mildly erythematous without exudate.  Nasal mucosa was erythematous and swollen.  Only clear drainage was seen.  TMs were clear.,Neck:  Supple without adenopathy.,Lungs:  Clear.,ASSESSMENT:,  Allergic rhinitis.,PLAN:,1.  She will try Zyrtec instead of Allegra again.  Another option will be to use loratadine.  She does not think she has prescription coverage so that might be cheaper.,2.  Samples of Nasonex two sprays in each nostril given for three weeks.  A prescription was written as well.| Cardiovascular / Pulmonary|
                         
 There are 40 different categories. Figure 1 displays the distribution of the top 20 categories in the dataset.
 
