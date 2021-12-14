@@ -6,7 +6,7 @@
 
 This project goal is to develop a classifier that given a medical transcription text classifies its medical specialty.
 
-**Note:** The goal of this project is not necessarily to achieve state-of-the-art results, but to try the idea of dissimilarity space on the task of text classification.
+**Note:** The goal of this project is not necessarily to achieve state-of-the-art results, but to try the idea of dissimilarity space on the task of text classification (see "main idea" section below).
 
 ## Data
 The original data contains 4966 records, each including three main elements: <br/>
@@ -38,7 +38,7 @@ Due to limitations in time and memory, I use descriptions rather than transcript
 ## Main Idea
 The main idea used in this project is to learn a smart embedding to each medical description in the training set, and use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical description and predict its medical specialty.
 
-The idea is adapted from [1], with the necessary adjustments because text data is used in this project instead of images.
+The idea is adapted from [1] with some adjustments because text data is used in this project instead of images.
 
 ## Scheme
 The training procedure consists of several steps which are schematized in Figure 4.
