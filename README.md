@@ -147,7 +147,10 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 
 ## TODO
 Problem: 
-if the training loss is not decreasing, chances are the model is too simple for the data. The other possibility is that our data just doesn’t contain meaningful information that lets it explain the output
+if the training loss is not decreasing (the network stop learninf), chances are:
+- we reached into local minmum (decrease/increase learning rate)
+- the model is too simple for the data. 
+- our data just doesn’t contain meaningful information that lets it explain the output
 
 Conclusion so far:
 - with only 2 categories the loss decresed from 0.6 to 0.2.
