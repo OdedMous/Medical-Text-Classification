@@ -60,9 +60,9 @@ One can try either the descriptions or the transcriptions (or both) as the sampl
 
 
 ## Main Idea
-The main idea used in this project is to learn a smart embedding to each medical description in the training set, and use the embedded vectors to train classifiers. Then one can perform the same embedding to a new medical description and predict its medical specialty.
+The main idea used in this project is to learn a distance measure between the texts, and then use this measure to perform smart embedding to each medical description in the training set. Then we train a classifier using the embedded vectors for predicting medical specialties.
 
-The idea is adapted from the paper "Spectrogram Classification Using Dissimilarity Space" [1] with some adjustments because text data is used in this project instead of images.
+The idea is adapted from the paper "Spectrogram Classification Using Dissimilarity Space" [1] with some adjustments because we use text data in this project instead of images.
 
 ## Scheme
 The training procedure consists of several steps which are schematized in Figure 5.
@@ -72,7 +72,7 @@ The training procedure consists of several steps which are schematized in Figu
 | **Figure 5**: Training Scheme |
 
 **(1) Training Set**  <br/>
-The original train set is used to build a customized data loader. It produces pairs of samples with a probability of 0.5 that both samples belong to the same category.
+A customized data loader is built from the train set. It produces pairs of samples with a probability of 0.5 that both samples belong to the same category.
 
 **(2) Siamese Neural Network (SNN) Training** <br/>
 The purpose of this phase is to learn a distance measure d(x,y) by maximizing the similarity between couples of samples in the same category, while minimizing the similarity for couples in different categories. <br/>
