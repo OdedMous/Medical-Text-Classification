@@ -1,6 +1,3 @@
-componentDidMount() {
-    document.body.style.backgroundColor = "black"
-}
 
 # Medical Text Classification using Dissimilarity Space
 
