@@ -25,7 +25,9 @@ There are 40 different categories. Figure 1 displays the distribution of the top
 | **Figure 1**: Top 20 categories|
 
 
-One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each. 
+One can see that the dataset is very unbalanced - most categories represent less than 5% of the total,  each.  
+In addition some categories can be considered as 
+(for example "Surgery" category is kind of superset as there can be surgeries belonging to specializations like cardiology,neurolrogy etc)
 
 Due to limitations in time and memory, I use descriptions rather than transcriptions (see Figure 3 and Figure 4, which displays their text length histograms).
 
@@ -156,6 +158,8 @@ if the training loss is not decreasing, chances are the model is too simple for 
 
 - General
   - train with keras
+  - train with this code: https://www.analyticsvidhya.com/blog/2020/01/first-text-classification-in-pytorch/
+  -(maybe I have a problem with no_grads or smething)
 
 
 
