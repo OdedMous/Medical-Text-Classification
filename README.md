@@ -131,7 +131,7 @@ if the training loss is not decreasing, chances are the model is too simple for 
 
 
 - Data
-
+  - Deal with imbalance datast (SMOTE / change sample procedure in the datalaoder)
   - reduce number of categories to 2 - it went from 0.6 to 0.3 but them stop there
   - instead of using the description (less accurate than the transcription)  or using the full transcription (too heavy), sample from the transcription a text of 512 characters  (kind of augmentation).
   - train on other dataset (simpler dataset)
