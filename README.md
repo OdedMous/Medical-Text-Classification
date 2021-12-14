@@ -29,7 +29,7 @@ One can see that the dataset is very unbalanced - most categories represent less
 In addition some categories can be considered as 
 (for example "Surgery" category is kind of superset as there can be surgeries belonging to specializations like cardiology,neurolrogy etc)
 
-| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/selected_categories_dists.png?raw=true)|
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/selected_categories_dist.png?raw=true)|
 | --- |
 | **Figure 2**: Selected categories|
 
