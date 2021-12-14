@@ -178,7 +178,8 @@ The training loss is not decreasing (the network stop learning). Possibole reaso
 
 - Architecture
   - **increase the complexity of the model - more FF layers / 1d convolution**
-  - - **change distance layer (to cosine distance maybe)**
+  -  **change distance layer (to cosine distance maybe)**
+  - **leave only 1 fine tuning layer, and instead add more FF layer to the distance layer**
   - discard finetuning FF layer - didn't work
   - decrease the dimension of finetuning layer from 128 to 64 - didn't work
   - increase the dimension of finetunning layer from 128 to 512 - didn't work
