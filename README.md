@@ -41,7 +41,7 @@ So we process the dataset as follows:
 - Drop "general" categories (For example, the "Surgery" category is kind of a general category as there can be surgeries belonging to specializations like cardiology, neurology etc. ).
 - Combine " Neurology" and " Neurosurgery" categories into a single category.
 
-12 categories remained, and we take the most common 5 categories to be the main data (see Figure 2). The rest left out for evaluation purposes (see Evaluation section point B.).
+12 categories remained, and we take the most common 5 categories to be the main data (see Figure 2). The rest left out for evaluation purposes (see point B at Evaluation section below).
 
 The main data contains 1540 records, and is divided into 70% train set, 15% validation set, and 15% test set.
 
