@@ -1,3 +1,7 @@
+componentDidMount() {
+    document.body.style.backgroundColor = "black"
+}
+
 # Medical Text Classification using Dissimilarity Space
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Medical_Transcription.jpg?raw=true)
