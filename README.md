@@ -17,7 +17,7 @@ The original data contains 4966 records, each including three main elements: <br
 
 **Medical Specialty** - Medical specialty classification of transcription (category).  <br/>
 
-The table below displays two examples.
+The table below displays several examples.
 
 | | Description | Transcription | Medical Specialty |
 | --- | ---  | ---  |  :----:  |
