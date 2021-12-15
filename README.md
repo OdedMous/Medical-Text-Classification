@@ -60,9 +60,10 @@ One can try either the descriptions or the transcriptions (or both) as the sampl
 
 
 ## Main Idea
-The main idea used in this project is to learn a distance measure between the texts, and then use this measure to perform smart embedding to each medical description in the training set. Then we train a classifier using the embedded vectors for predicting medical specialties.
+The main idea used in this project is to learn a distance measure between the texts, and then use this measure to perform smart embedding to text. Then we train a classifier using the embedded vectors for predicting medical specialties.
 
-The idea is adapted from the paper "Spectrogram Classification Using Dissimilarity Space" [1] with some adjustments because we use text data in this project instead of images.
+This idea is adapted from the paper "Spectrogram Classification Using Dissimilarity Space" [1] with some adjustments (detailed below) because we are using text data instead of images in this project.
+
 
 ## Scheme
 The training procedure consists of several steps which are schematized in Figure 5.
