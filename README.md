@@ -148,9 +148,9 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 | | |
 | --- | --- |
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_train.png?raw=true)|![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_test.png?raw=true) |
-|3d_projected_train |3d_projected_test |
+|**A:** 3d_projected_train. Explained variance:91% |**B:** 3d_projected_test. Explained variance:89% |
 |![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_train.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_test.png?raw=true)|
-|3d_projected_unseen_train | 3d_projected_unseen_test|
+|**C:** 3d_projected_unseen_train. Explained variance:88% | **D:** 3d_projected_unseen_test. Explained variance:89%|
 
 
 ## TODO
