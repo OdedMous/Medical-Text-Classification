@@ -135,7 +135,7 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true)
 
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.jpg?raw=true)
+![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.png?raw=true)
 
 
 **unseen_test_confusion_mat**
