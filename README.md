@@ -129,12 +129,12 @@ Figures 6 and 7 display the confusion matrix and the classification report for t
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.png?raw=true)|
 | --- | --- |
-| **Figure 6** |
+| **Figure 6**: Test set results. |
 
 
  | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)|
 | --- | --- |
-| **Figure 7** |
+| **Figure 7**: "Unseen" test set results. |
 
 
 
