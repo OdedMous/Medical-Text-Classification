@@ -129,7 +129,7 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 **3d_embedded_train_mat**
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_embedded_train_mat.png?raw=true) |
 | --- |
-| **Figure 7**:  **Embedded train data** projected into a 3D space using PCA. Explained variance: 77% |
+| **Figure 7**:  **Embedded train data** projected into a 3D space using PCA. Explained variance: 93% |
 
 **test_confusion_mat**
 
