@@ -145,6 +145,13 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)
 
 
+| | |
+| --- | --- |
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_train.png?raw=true)|![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_test.png?raw=true) |
+|3d_projected_train |3d_projected_test |
+|![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_train.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_test.png?raw=true)|
+|3d_projected_unseen_train | 3d_projected_unseen_test|
+
 
 ## TODO
 **Problem:**
