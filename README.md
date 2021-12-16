@@ -124,14 +124,17 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 
 ## Results
 
+Figures 6 and 7 display the confusion matrix and the classification report for the test set and the "unseen" test set.
+
+
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.png?raw=true)|
 | --- | --- |
-| Figure 6
+| **Figure 6** |
 
 
  | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)|
 | --- | --- |
-| Figure 7 |
+| **Figure 7** |
 
 
 
