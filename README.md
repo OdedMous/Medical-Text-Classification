@@ -124,25 +124,30 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 
 ## Results
 
-
-
-
-| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/SNN_loss.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_embedded_train_mat.png?raw=true) | 
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.png?raw=true)|
 | --- | --- |
-| **Figure 6:** | **Figure 7**:  **Embedded train data** by using the trained SNN model. This figure displays its projection into a 3D space using PCA. Explained variance: 93% |
-
-**test_confusion_mat**
-
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true)
-
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.png?raw=true)
+| Figure 6
 
 
-**unseen_test_confusion_mat**
+ | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)|
+| --- | --- |
+| Figure 7 |
 
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true)
 
-![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)
+
+
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/SNN_loss.png?raw=true) |
+| --- | 
+| **Figure 8:**  |
+
+
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_embedded_train_mat.png?raw=true) | 
+| --- | 
+| **Figure 9**:  **Embedded train data** by using the trained SNN model. This figure displays its projection into a 3D space using PCA. Explained variance: 93% |
+
+
+
+
 
 
 | | |
