@@ -146,14 +146,14 @@ Figures 6 and 7 display the confusion matrix and the classification report for t
 similarity scores per batch in training set 
 
 TODO: do also for validation set
-| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_scores.png?raw=true) |
-| --- | 
-| **Figure 9:**  |
+| ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_scores.png?raw=true) |  ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_scores_validation.png?raw=true)|
+| --- | --- |
+| **Figure 9:**  | **Figure10** |
 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_embedded_train_mat.png?raw=true) | 
 | --- | 
-| **Figure 10**:  **Embedded train data** by using the trained SNN model. This figure displays its projection into a 3D space using PCA. Explained variance: 93% |
+| **Figure 11**:  **Embedded train data** by using the trained SNN model. This figure displays its projection into a 3D space using PCA. Explained variance: 93% |
 
 
 
