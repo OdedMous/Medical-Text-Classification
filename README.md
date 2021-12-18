@@ -143,6 +143,9 @@ Figures 6 and 7 display the confusion matrix and the classification report for t
 | --- | 
 | **Figure 8:**  |
 
+similarity scores per batch in training set 
+
+TODO: do also for validation set
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_scores.png?raw=true) |
 | --- | 
 | **Figure 9:**  |
