@@ -122,6 +122,8 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
  - Perform steps 3,4,5,6 in the training phase on the train set. Note that we don't train the SNN model agian.
  - Predict the test set categories as we do in A). 
 
+We will mainly focus on A) for the evaluation. B) will be a bonus.
+
 ## Results
 
 Figures 6 and 7 display the confusion matrix and the classification report for the test set and the "unseen" test set.
@@ -143,6 +145,8 @@ Another nore is that it seems that the "Radiology" category is also a "super-cat
  | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)|
 | --- | --- |
 | **Figure 7**: "Unseen" test set results. |
+
+The results for the "unseen" set are very low,  suggesting the model has not been generalized to other categories.
 
 
 
