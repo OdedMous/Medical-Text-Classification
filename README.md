@@ -183,9 +183,9 @@ Note that it seems that one could use this projected data and train directly the
 | | |
 | --- | --- |
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_train.png?raw=true)|![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_test.png?raw=true) |
-|**A:** Regular train set. Explained variance:91% |**B:** Regular test set. Explained variance:89% |
+|**A:** Regular train set. Explained variance: 91% |**B:** Regular test set. Explained variance: 89% |
 |![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_train.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_test.png?raw=true)|
-|**C:** "Unseen" train set. Explained variance:88% | **D:** "Unseen" test set. Explained variance:89%|
+|**C:** "Unseen" train set. Explained variance: 88% | **D:** "Unseen" test set. Explained variance: 89%|
 
 
 ## TODO
