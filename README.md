@@ -165,12 +165,12 @@ It can be seen that the network achieved a train loss around 0.5 in 30 epochs, 
 | --- | --- |
 | **Figure 9:** Similarity Scores, training set. | **Figure10:** Similarity Scores, validation set.|
 
+It can be seen that the range of similarity scores for texts belonging to the same category is different from the range of texts belonging to different categories, and that the first range is higher.  So it appears that the SNN model managed to learn a distance measure between the texts.
+
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_embedded_train_mat.png?raw=true) | 
 | --- | 
 | **Figure 11**:  **Embedded train data** by using the trained SNN model. This figure displays its projection into a 3D space using PCA. Explained variance: 93% |
-
-
 
 
 
