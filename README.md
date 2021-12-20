@@ -150,7 +150,7 @@ The results for the "unseen" set are very low,  suggesting the model has not bee
 
 ## Further Analysis
 
-This section attempts to analyze the results further.
+In this section we attempt to analyze the results further.
 
 Figure 8 shows for the siamese neural network its train and validation losses per epoch. 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/SNN_loss.png?raw=true) |
