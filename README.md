@@ -157,7 +157,7 @@ In this section we attempt to analyze the results further.
 | --- | 
 | **Figure 8:**  |
 
-It can be seen that the network achieved a train loss around 0.5 in 30 epochs, that the validation loss is unstable, and that the rate of the learning is quite slow. We can try to improve these issues by playing with the hyperparameters (learning rate, batch size, architecture etc.). The "To Do" section below elaborates the possible options.
+It can be seen that the network achieved a train loss around 0.5 in 30 epochs, that the validation loss is unstable, and that the rate of the learning is quite slow. We can try to improve these issues by playing with the hyperparameters of the SNN model (learning rate, batch size, architecture etc.). The "To Do" section below elaborates the possible options.
 
 **Figure 9**  displays the similarity scores per batch in the training set, by the following way:  For each batch we calculate the average similarity score of pairs that belong to the same category ("matching categories") , and calculate separately the average similarity score of pairs that belong to different categories ("unmatching categories"). **Figure 10** displays the same but for the validation set.
 
