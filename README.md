@@ -132,7 +132,7 @@ F1 score is the harmonic mean of precision and recall scores.
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.png?raw=true)|
 | --- | --- |
-| **Figure 6**: Test set results. |
+| **Figure 6**: "Regular" test set results. |
 
 It can be seen that the overall F1-score for the "regular" test set is quite low - 0.64. Some categories got relatively high results on some scores (for example "Gastroenterology" precision score is 0.92 and F1 score is 0.83). But for most of the categories we got poor results.
 
