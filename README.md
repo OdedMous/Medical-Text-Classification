@@ -176,8 +176,9 @@ It can be seen that the range of similarity scores for texts belonging to the sa
 
 We can see that there is an impressive separation between the categories. In addition there is an overlap between the categories "Neurology" and "Orthopedic", and overlap between the "Radiology" category and all others, as we expected from the results.
 
-It seems that one could use this projected data and train directly the classifier on it instead of projecting the data into dissimilarity space. However, we are still interested in evaluating the idea of dissimilarity space.
+note that it seems that one could use this projected data and train directly the classifier on it instead of projecting the data into dissimilarity space. 
 
+**Figure 12**
 
 | | |
 | --- | --- |
