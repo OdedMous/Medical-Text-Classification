@@ -180,6 +180,7 @@ Note that it seems that one could use this projected data and train directly the
 
 **Figure 12** displays the projection into the dissimilarity space of the "regular"  train and test sets (A and B plots), and of the "unseen" train and test sets (C and D plots).
 
+| | |
 | --- | --- |
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_train.png?raw=true)|![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_test.png?raw=true) |
 |**A:** Regular train set. Explained variance:91% |**B:** Regular test set. Explained variance:89% |
