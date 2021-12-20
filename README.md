@@ -148,8 +148,7 @@ Another nore is that it seems that the "Radiology" category is also a "super-cat
 
 The results for the "unseen" set are very low,  suggesting the model has not been generalized to other categories.
 
-
-
+### Further Analysis
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/SNN_loss.png?raw=true) |
 | --- | 
