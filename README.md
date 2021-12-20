@@ -126,11 +126,19 @@ We evaluate the full procedure using the usual metrics (precision, recall, F1-sc
 
 Figures 6 and 7 display the confusion matrix and the classification report for the test set and the "unseen" test set.
 
+A high precision score for a category indicates that the classifier is usually accurate when detecting this category.
+A high recall score for a category indicates that the classifier is able to detect many samples that belong to this category.
+F1 score is the harmonic mean of precision and recall scores.
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/test_report.png?raw=true)|
 | --- | --- |
 | **Figure 6**: Test set results. |
 
+It can be seen that the overall F1-score for the "regular" test set is quite low - 0.64. Some categories got relatively high results on some scores (for example "Gastroenterology" precision score is 0.92 and F1 score is 0.83). But for most of the categories we got poor results.
+
+It is interesting to see from the confusion matrix that in many cases the classifier mistakenly classifies "Neurology" instead of "Orthopedic" and vice versa. One possible explanation is that these two categories overlap to some extent. For example some orthopedic issues usually involve the nervous system (spine problems etc.).
+
+Another nore is that it seems that the "Radiology" category is also a "super-category", since in many cases the classifier outputs "Radiology" instead of other categories, and vice versa. It makes sense since every medical specialty may require medical imaging tests such as CT and MRI in order to perform a diagnosis to the patient.
 
  | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_confusion_mat.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/unseen_test_report.png?raw=true)|
 | --- | --- |
