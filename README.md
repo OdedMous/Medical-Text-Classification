@@ -148,11 +148,16 @@ Another nore is that it seems that the "Radiology" category is also a "super-cat
 
 The results for the "unseen" set are very low,  suggesting the model has not been generalized to other categories.
 
-### Further Analysis
+## Further Analysis
 
+This section attempts to analyze the results further.
+
+Figure 8 shows for the siamese neural network its train and validation losses per epoch. 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/SNN_loss.png?raw=true) |
 | --- | 
 | **Figure 8:**  |
+
+It can be seen that the network achieved a train loss around 0.5 in 30 epochs, that the validation loss is unstable, and that the rate of the learning is quite slow. We can try to improve these issues by playing with the hyperparameters (learning rate, batch size, architecture etc.). The "To Do" section below elaborates the possible options.
 
 similarity scores per batch in training set and valodation set
 
