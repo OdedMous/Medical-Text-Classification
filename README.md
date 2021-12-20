@@ -163,7 +163,7 @@ It can be seen that the network achieved a train loss around 0.5 in 30 epochs, 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_scores.png?raw=true) |  ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_score_validation.png?raw=true)|
 | --- | --- |
-| **Figure 9:** Similarity Scores, training set. | **Figure10:** Similarity Scores, validation set.|
+| **Figure 9:** Similarity Scores, training set. | **Figure 10:** Similarity Scores, validation set.|
 
 It can be seen that the range of similarity scores for texts belonging to the same category is different from the range of texts belonging to different categories, and that the first range is higher.  So it appears that the SNN model managed to learn a distance measure between the texts.
 
