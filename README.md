@@ -159,11 +159,11 @@ Figure 8 shows for the siamese neural network its train and validation losses pe
 
 It can be seen that the network achieved a train loss around 0.5 in 30 epochs, that the validation loss is unstable, and that the rate of the learning is quite slow. We can try to improve these issues by playing with the hyperparameters (learning rate, batch size, architecture etc.). The "To Do" section below elaborates the possible options.
 
-similarity scores per batch in training set and valodation set
+Figure 9  displays the similarity scores per batch in the training set, by the following way:  For each batch we calculate the average similarity score of pairs that belong to the same category ("matching categories") , and separately the average similarity score of pairs that belong to different categories ("unmatching categories"). Figure 10 displays the same but for the validation set.
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_scores.png?raw=true) |  ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_score_validation.png?raw=true)|
 | --- | --- |
-| **Figure 9:**  | **Figure10** |
+| **Figure 9:** Similarity Scores, training set. | **Figure10:** Similarity Scores, validation set.|
 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_embedded_train_mat.png?raw=true) | 
