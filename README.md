@@ -178,14 +178,13 @@ We can see that there is an impressive separation between the categories. In add
 
 Note that it seems that one could use this projected data and train directly the classifier on it instead of projecting the data into dissimilarity space. 
 
-**Figure 12**
+**Figure 12** displays the projection into the dissimilarity space of the "regular"  train and test sets (A and B plots), and of the "unseen" train and test sets (C and D plots).
 
-| | |
 | --- | --- |
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_train.png?raw=true)|![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_test.png?raw=true) |
-|**A:** 3d_projected_train. Explained variance:91% |**B:** 3d_projected_test. Explained variance:89% |
+|**A:** Regular train set. Explained variance:91% |**B:** Regular test set. Explained variance:89% |
 |![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_train.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_test.png?raw=true)|
-|**C:** 3d_projected_unseen_train. Explained variance:88% | **D:** 3d_projected_unseen_test. Explained variance:89%|
+|**C:** "Unseen" train set. Explained variance:88% | **D:** "Unseen" test set. Explained variance:89%|
 
 
 ## TODO
