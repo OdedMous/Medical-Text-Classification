@@ -7,7 +7,7 @@
 
 This project goal is to develop a classifier that given a medical transcription text classifies its medical specialty.
 
-**Note:** The goal of this project is not necessarily to achieve state-of-the-art results, but to try the idea of dissimilarity space on the task of text classification (see "main idea" section below).
+**Note:** The goal of this project is not necessarily to achieve state-of-the-art results, but to try the idea of dissimilarity space for the task of text classification (see "main idea" section below).
 
 ## Data
 The original data contains 4966 records, each including three main elements: <br/>
