@@ -27,7 +27,7 @@ The table below displays several examples:
 | (3) | Patient having severe sinusitis about two to three months ago with facial discomfort, nasal congestion, eye pain, and postnasal drip symptoms.|HISTORY:,  I had the pleasure of meeting and evaluating the patient referred today for evaluation and treatment of chronic sinusitis.  As you are well aware, she is a pleasant 50-year-old female who states she started having severe sinusitis about two to three months ago with facial discomfort, nasal congestion, eye pain, and postnasal drip symptoms.  She states she really has sinus......| Allergy / Immunology|
 
                         
-There are 40 different categories. Figure 1 displays the distribution of the top 20 categories in the dataset.
+There are 40 different categories. **Figure 1** displays the distribution of the top 20 categories in the dataset.
 
 <br/>
 
@@ -42,7 +42,7 @@ So we process the dataset as follows:
 - Drop "general" categories (For example, the "Surgery" category is kind of a general category as there can be surgeries belonging to specializations like cardiology, neurology etc. ).
 - Combine " Neurology" and " Neurosurgery" categories into a single category.
 
-12 categories remained, and we take the most common 5 categories to be the main data (see Figure 2). The rest left out for evaluation purposes (see point B at Evaluation section below).
+12 categories remained, and we take the most common 5 categories to be the main data (see **Figure 2**). The rest left out for evaluation purposes (see point B at Evaluation section below).
 
 The main data contains 1540 records, and is divided into 70% train set, 15% validation set, and 15% test set.
 
@@ -51,7 +51,7 @@ The main data contains 1540 records, and is divided into 70% train set, 15% vali
 | --- |
 | **Figure 2**: Selected categories|
 
-One can try either the descriptions or the transcriptions (or both) as the samples, but due to limitations in time and memory I use only the descriptions (see Figure 3 and Figure 4, which displays the text lengths histograms).
+One can try either the descriptions or the transcriptions (or both) as the samples, but due to limitations in time and memory I use only the descriptions (see **Figure 3** and **Figure 4**, which displays the text lengths histograms).
 
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/descriptions_length.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/transcriptions_length.png?raw=true) |
@@ -66,7 +66,7 @@ This idea is adapted from the paper "Spectrogram Classification Using Dissimilar
 
 
 ## Scheme
-The training procedure consists of several steps which are schematized in Figure 5.
+The training procedure consists of several steps which are schematized in **Figure 5**.
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Training_Scheme.png?raw=true) |
 | --- |
@@ -126,7 +126,7 @@ We will mainly focus on A) for the evaluation. B) will be a bonus.
 
 ## Results
 
-Figures 6 and 7 display the confusion matrix and the classification report for the test set and the "unseen" test set.
+**Figures 6** and **7** display the confusion matrix and the classification report for the test set and the "unseen" test set.
 
 A high precision score for a category indicates that the classifier is usually accurate when detecting this category.
 A high recall score for a category indicates that the classifier is able to detect many samples that belong to this category.
@@ -152,14 +152,14 @@ The results for the "unseen" set are very low,  suggesting the model has not bee
 
 In this section we attempt to analyze the results further.
 
-Figure 8 shows for the siamese neural network its train and validation losses per epoch. 
+**Figure 8** shows for the siamese neural network its train and validation losses per epoch. 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/SNN_loss.png?raw=true) |
 | --- | 
 | **Figure 8:**  |
 
 It can be seen that the network achieved a train loss around 0.5 in 30 epochs, that the validation loss is unstable, and that the rate of the learning is quite slow. We can try to improve these issues by playing with the hyperparameters (learning rate, batch size, architecture etc.). The "To Do" section below elaborates the possible options.
 
-Figure 9  displays the similarity scores per batch in the training set, by the following way:  For each batch we calculate the average similarity score of pairs that belong to the same category ("matching categories") , and calculate separately the average similarity score of pairs that belong to different categories ("unmatching categories"). Figure 10 displays the same but for the validation set.
+**Figure 9**  displays the similarity scores per batch in the training set, by the following way:  For each batch we calculate the average similarity score of pairs that belong to the same category ("matching categories") , and calculate separately the average similarity score of pairs that belong to different categories ("unmatching categories"). **Figure 10** displays the same but for the validation set.
 
 | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_scores.png?raw=true) |  ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/similarity_score_validation.png?raw=true)|
 | --- | --- |
