@@ -1,7 +1,4 @@
 
-
-$$\sqrt{2}$$.
-
 # Medical Text Classification using Dissimilarity Space
 
 ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/Medical_Transcription.jpg?raw=true)
@@ -83,12 +80,12 @@ The purpose of this phase is to learn a distance measure d(x,y) by maximizing 
 Our siamese network model consists of several components:
 
 - **Two identical twin subnetworks** <br/>
-Two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector $`f_i`$ which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed and on full-text articles from PubMedCentral, see [2]) followed by a fine-tuning layers: 1D convolution layers and a FF layer.
+Two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed and on full-text articles from PubMedCentral, see [2]) followed by a fine-tuning layers: 1D convolution layers and a FF layer.
 - **Subtract Block** <br/>
-Subtracting the output feature vectors of the subnetworks yields a feature vector Y representing the difference between the texts: <br/>
-Y = | f1 - f2 | <br/>
+Subtracting the output feature vectors of the subnetworks yields a feature vector that representing the difference between the texts: <br/>
+
 - **Fully Connected Layer (FCL)** <br/>
-Learn the distance model to calculate the dissimilarity. The output vector of the subtract block is fed to the FCL which returns a dissimilarity value for the pair of texts in the input. Then a sigmoid function is applied  to the dissimilarity value to convert it to a probability value in the range [0, 1].
+The output vector of the subtract block is fed to the FCL which returns a dissimilarity value for the pair of texts in the input. Then a sigmoid function is applied  to the dissimilarity value to convert it to a probability value in the range [0, 1].
 
 We use Binary Cross Entropy as the loss function. 
 
@@ -98,9 +95,9 @@ In this phase, K prototypes are extracted from the training set. As the autore
 In order to represent the training samples as vectors for the clustering algorithm, the authors in [1] used the pixel vector of each image. In this project, I utilize one of the subnetworks of the trained SNN to retrieve the feature vectors of every training sample (recall that the subnetwork gives us an embedded vector which represent the input text).
 
 **(5) Projection in the Dissimilarity Space** <br/>
-In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample in the dissimilarity space, we calculate the similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector: <br/>
-F(x)=[d(x,pi),d(x,pi+1),...,d(x,pk)] <br/>
-The similarity among a sample and a prototype d(x,y) is obtained using the trained SNN.
+In this phase the data is projected into dissimilarity space. In order to obtain the representation of a sample x in the dissimilarity space, we calculate the similarity between the sample and the selected set of prototypes P=p1,...pk, which resulting in a dissimilarity vector: <br/>
+F(x)=[d(x,p1),d(x,p2),...,d(x,pk)] <br/>
+The similarity among a sample and a prototype d(x,p) is obtained using the trained SNN.
 
 **(6) SVM Classifiers** <br/>
 In this phase an ensemble of SVMs are trained using a One-Against-All approach: For each category an SVM classifier is trained to discriminate between this category and all the other categories put together. A sample is then assigned to the category that gives the highest confidence score. The inputs for the classifiers are the projected train data.
