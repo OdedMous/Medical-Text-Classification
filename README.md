@@ -1,6 +1,6 @@
 
 
-$`\sqrt{2}`$.
+$$\sqrt{2}$$.
 
 # Medical Text Classification using Dissimilarity Space
 
