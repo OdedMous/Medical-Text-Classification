@@ -216,7 +216,7 @@ The training loss is decreasing slowly / not decreasing (model is not learning).
   - check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
 
 - General
-  - train with keras (maybe i have bug in my code, so differnt libary may fix the issue)
+  - train with keras (maybe I have a bug in my code, so differnt libary may fix the issue)
   - train with this code: https://www.analyticsvidhya.com/blog/2020/01/first-text-classification-in-pytorch/ (maybe I have a problem with no_grads)
 
 ## Libaries
