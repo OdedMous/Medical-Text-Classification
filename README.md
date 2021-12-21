@@ -193,7 +193,7 @@ The training loss is decreasing slowly / not decreasing (model is not learning).
 **What can be changed:**
 
 - Hyperparametrs
-  - learning rate: use sceduler = scyclic learning rate
+  - learning rate: increase/decrease,  use a sceduler (for example a cyclic learning rate)
   - btach size
   - loss function (?)
   - optimizer
