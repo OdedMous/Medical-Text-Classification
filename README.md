@@ -178,7 +178,7 @@ We can see that there is an impressive separation between the categories. In add
 
 Note that it seems that one could use this projected data and train directly the classifier on it instead of projecting the data into dissimilarity space. 
 
-**Figure 12** displays the projection into the dissimilarity space of the "regular"  train and test sets (A and B plots), and of the "unseen" train and test sets (C and D plots).
+**Figure 12** displays the projection into the dissimilarity space of the "regular" train and test sets (A and B plots), and of the "unseen" train and test sets (C and D plots). As we did in Figure 11, we used PCA to display the projection in 3D.
 
 | | |
 | --- | --- |
