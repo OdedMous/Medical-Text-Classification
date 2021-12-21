@@ -80,7 +80,8 @@ The purpose of this phase is to learn a distance measure d(x,y) by maximizing 
 Our siamese network model consists of several components:
 
 - **Two identical twin subnetworks** <br/>
-two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed and on full-text articles from PubMedCentral, see [2]) followed by a FF layer for fine-tuning.
+Two identical sub-network that share the same parameters and weights. Each subnetwork gets as input a text and outputs a feature vector ```math
+f_i``` which is designed to represent the text. I chose as a subnetwork a pre-trained Bert model (a huggingface model which trained on abstracts from PubMed and on full-text articles from PubMedCentral, see [2]) followed by a fine-tuning layers: 1D convolution layers and a FF layer.
 - **Subtract Block** <br/>
 Subtracting the output feature vectors of the subnetworks yields a feature vector Y representing the difference between the texts: <br/>
 Y = | f1 - f2 | <br/>
@@ -200,8 +201,8 @@ The training loss is decreasing slowly / not decreasing (model is not learning).
 
 - Data
   - Deal with imbalance datast (SMOTE / change sample procedure in the datalaoder)
-  - reduce number of categories to 2 and check of the model is able to learn
-  - instead of using the description (less accurate than the transcription?) or using the full transcription with LongTransformer (too heavy), sample from the transcription a text of 512 characters  (kind of augmentation).
+  - reduce number of categories to 2 and check if the model is able to learn on this simpler data.
+  - instead of using the descriptions (less accurate than the transcriptions?) or using the full transcriptions with LongTransformer (too heavy), sample from the transcriptions  texts of 512 characters  (kind of augmentation).
   - train on other dataset (simpler dataset)
   - make the dataloader sample equally from all classes 
 
@@ -227,7 +228,5 @@ Pytorch, HuggingFace, sklearn, mumpy, Plotly
 [1] Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
 
 [2] https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
-
-[3]
 
 
