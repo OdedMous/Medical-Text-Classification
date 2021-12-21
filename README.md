@@ -202,8 +202,8 @@ The training loss is decreasing slowly / not decreasing (model is not learning).
   - Deal with imbalance datast (SMOTE / change sample procedure in the datalaoder)
   - reduce number of categories to 2 and check if the model is able to learn on this simpler data.
   - instead of using the descriptions (less accurate than the transcriptions?) or using the full transcriptions with LongTransformer (too heavy), sample from the transcriptions  texts of 512 characters  (kind of augmentation).
-  - train on other dataset (simpler dataset)
   - make the dataloader sample equally from all classes 
+  -  train on other dataset (simpler dataset, for sanity check)
 
 - Architecture
   - increase the complexity of the model - for example more FF layers / 1d convolution
