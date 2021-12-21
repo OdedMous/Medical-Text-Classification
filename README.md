@@ -87,8 +87,7 @@ Y = | f1 - f2 | <br/>
 - **Fully Connected Layer (FCL)** <br/>
 Learn the distance model to calculate the dissimilarity. The output vector of the subtract block is fed to the FCL which returns a dissimilarity value for the pair of texts in the input. Then a sigmoid function is applied  to the dissimilarity value to convert it to a probability value in the range [0, 1].
 
-We use Binary Cross Entropy as the loss function. Note that in the original siamese neural network paper ([3]) the authors used various loss function which can consider more then two samples......................
-
+We use Binary Cross Entropy as the loss function. 
 
 **(3-4) Prototype Selection** <br/>
 In this phase, K prototypes are extracted from the training set. As the autores of [1] stated, it is not practical to take every sample in the training as a prototype. Alternatively, m centroids for each category separately are computed by clustering technique. This reduces the prototype list from the size of the training sample (K=n) to K=m*C (C=number of categories). I chose K-means for the clustering algorithm.
@@ -102,12 +101,6 @@ The similarity among a sample and a prototype d(x,y) is obtained using the train
 
 **(6) SVM Classifiers** <br/>
 In this phase an ensemble of SVMs are trained using a One-Against-All approach: For each category an SVM classifier is trained to discriminate between this category and all the other categories put together. A sample is then assigned to the category that gives the highest confidence score. The inputs for the classifiers are the projected train data.
-
-## Why using Dissimilarity Sapce and not Direct classifier
-
-- imbalanced data
-- new categories: no need to train new model?
-- To try this method, self learing....
 
 ## Evaluation
 
@@ -187,63 +180,54 @@ Note that it seems that one could use this projected data and train directly the
 |![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_train.png?raw=true) | ![pic](https://github.com/OdedMous/Medical-Transcriptions-Classification/blob/main/images/3d_projected_unseen_test.png?raw=true)|
 |**C:** "Unseen" train set. Explained variance: 88% | **D:** "Unseen" test set. Explained variance: 89%|
 
+It seems that the projection of the "regular" train and test set is quite meaningful, but the projection of the "unseen" train and test is not.
+
 
 ## TODO
 **Problem:**
-The training loss is not decreasing (the network stop learning). Possibole reasons:
-- we reached into a local minmum (decrease/increase learning rate)
-- the model is too simple for the data. 
-- our data just doesn’t contain meaningful information that lets it explain the output
+The training loss is decreasing slowly / not decreasing (model is not learning). possibole reasons:
+- we reached a local minmum.
+- the model is too simple for the data (so we should try yo increase the power of the model)
+- our data just doesn’t contain meaningful information that lets it explain the output.
 
-**Conclusion so far:**
-- with only 2 categories the loss decresed from 0.6 to 0.2.
-- so maybe if we will do more complex network it will help for 5 categories.
-
-
-**What to change:**
+**What can be changed:**
 
 - Hyperparametrs
   - learning rate: use sceduler = scyclic learning rate
   - btach size
-  - loss function
+  - loss function (?)
   - optimizer
-
 
 - Data
   - Deal with imbalance datast (SMOTE / change sample procedure in the datalaoder)
-  - reduce number of categories to 2 - it went from 0.6 to 0.3 but them stop there
-  - instead of using the description (less accurate than the transcription)  or using the full transcription (too heavy), sample from the transcription a text of 512 characters  (kind of augmentation).
+  - reduce number of categories to 2 and check of the model is able to learn
+  - instead of using the description (less accurate than the transcription?) or using the full transcription with LongTransformer (too heavy), sample from the transcription a text of 512 characters  (kind of augmentation).
   - train on other dataset (simpler dataset)
-  - spam dataset (2 caegories) - 20 epochs stuck around 0.2
-  - make the dataloader sample equally from all classes ?
-  - change to "transcription" of size 512 - didn't work (stucked on 0.6)
-
+  - make the dataloader sample equally from all classes 
 
 - Architecture
-  - **increase the complexity of the model - more FF layers / 1d convolution**
-  -  **change distance layer (to cosine distance maybe)**
-  - **leave only 1 fine tuning layer, and instead add more FF layer to the distance layer**
-  - discard finetuning FF layer - didn't work
-  - decrease the dimension of finetuning layer from 128 to 64 - didn't work
-  - increase the dimension of finetunning layer from 128 to 512 - didn't work
-  - change to rnn instead of bert - 
+  - increase the complexity of the model - for example more FF layers / 1d convolution
+  - change the distance layer (to cosine distance for example)
+  - leave only 1 fine tuning layer, and instead add more FF layer to the distance layer
+  - discard finetuning FF layer (remain only the bert output)
+  - decrease/increase the dimension of finetuning layer
+  - change to rnn instead of bert 
   - change to idftf instead of bert
-  - Check the bert embedding on the train set (plot it on 3d and see if the categories are seperated)
   - check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
-  - Add another layer of finetuning FF (if the SNN doesnt learn we should try yo increase its power. More parametrs = more power)
 
 - General
-  - train with keras
-  - train with this code: https://www.analyticsvidhya.com/blog/2020/01/first-text-classification-in-pytorch/
-  -(maybe I have a problem with no_grads or smething)
-
-
-
+  - train with keras (maybe i have bug in my code, so differnt libary may fix the issue)
+  - train with this code: https://www.analyticsvidhya.com/blog/2020/01/first-text-classification-in-pytorch/ (maybe I have a problem with no_grads)
 
 ## Libaries
-Pytorch, HuggingFace, sklearn,  Numpy, Plotly
+Pytorch, HuggingFace, sklearn, mumpy, Plotly
 
 ## Resources
+
 [1] Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm
+
+[2] https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+
+[3]
 
 
