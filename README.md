@@ -220,7 +220,7 @@ The training loss is decreasing slowly / not decreasing (model is not learning).
   - train with this code: https://www.analyticsvidhya.com/blog/2020/01/first-text-classification-in-pytorch/ (maybe I have a problem with no_grads)
 
 ## Libaries
-Pytorch, HuggingFace, sklearn, mumpy, Plotly
+Pytorch, HuggingFace, sklearn, numpy, Plotly
 
 ## Resources
 
