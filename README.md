@@ -187,7 +187,7 @@ It seems that the projection of the "regular" train and test set is quite meanin
 **Problem:**
 The training loss is decreasing slowly / not decreasing (model is not learning). possibole reasons:
 - we reached a local minmum.
-- the model is too simple for the data (so we should try yo increase the power of the model)
+- the model is too simple for the data (so we should try to increase the power of the model)
 - our data just doesn’t contain meaningful information that lets it explain the output.
 
 **What can be changed:**
