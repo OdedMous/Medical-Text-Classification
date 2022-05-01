@@ -226,6 +226,6 @@ Pytorch, HuggingFace, sklearn, numpy, Plotly
 
 [1]: https://www.mdpi.com/2076-3417/10/12/4176/htm "Spectrogram Classification Using Dissimilarity Space" 
 
-[2] https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext "PubMedBERT (abstracts + full text)"
+[2]: https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext "PubMedBERT (abstracts + full text)"
 
 
