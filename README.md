@@ -224,6 +224,10 @@ Pytorch, HuggingFace, sklearn, numpy, Plotly
 
 ## Resources
 
+[1] "Spectrogram Classification Using Dissimilarity Space" (https://www.mdpi.com/2076-3417/10/12/4176/htm) 
+
+[2] "PubMedBERT (abstracts + full text)" https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext 
+
 [1]: https://www.mdpi.com/2076-3417/10/12/4176/htm "Spectrogram Classification Using Dissimilarity Space" 
 
 [2]: https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext "PubMedBERT (abstracts + full text)"
