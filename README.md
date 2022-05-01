@@ -62,7 +62,7 @@ One can try either the descriptions or the transcriptions (or both) as the sampl
 ## Main Idea
 The main idea used in this project is to learn a distance measure between the texts, and then use this measure to project the data into dissimilarity space. Then we train a classifier using the embedded vectors for predicting medical specialties.
 
-This idea is adapted from the paper "Spectrogram Classification Using Dissimilarity Space" [1] with some adjustments (detailed below) because in this project we are using textual data instead of images.
+This idea is adapted from the paper "Spectrogram Classification Using Dissimilarity Space" [1](Spectrogram Classification Using Dissimilarity Space: https://www.mdpi.com/2076-3417/10/12/4176/htm) with some adjustments (detailed below) because in this project we are using textual data instead of images.
 
 
 ## Scheme
