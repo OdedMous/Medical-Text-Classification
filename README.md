@@ -204,6 +204,7 @@ The training loss is decreasing slowly / not decreasing (model is not learning).
   - instead of using the descriptions (less accurate than the transcriptions?) or using the full transcriptions with LongTransformer (too heavy), sample from the transcriptions  texts of 512 characters  (kind of augmentation).
   - make the dataloader sample equally from all classes 
   -  train on other dataset (simpler dataset, for sanity check)
+  - Try to select hard pairs of examples (see the idea used in triplet selection in triplet loss? but here we have 2 samples instead of 3)
 
 - Architecture
   - increase the complexity of the model - for example more FF layers / 1d convolution
