@@ -183,43 +183,6 @@ Note that it seems that one could use this projected data and train directly the
 It seems that the projection of the "regular" train and test set is quite meaningful, but the projection of the "unseen" train and test is not.
 
 
-## TODO
-**Problem:**
-The training loss is decreasing slowly / not decreasing (model is not learning). possibole reasons:
-- we reached a local minmum.
-- the model is too simple for the data (so we should try to increase the power of the model)
-- our data just doesn’t contain meaningful information that lets it explain the output.
-
-**What can be changed:**
-
-- Hyperparametrs
-  - learning rate: increase/decrease,  use a sceduler (for example a cyclic learning rate)
-  - btach size
-  - loss function (?)
-  - optimizer
-
-- Data
-  - Deal with imbalance datast (SMOTE / change sample procedure in the datalaoder)
-  - reduce number of categories to 2 and check if the model is able to learn on this simpler data.
-  - instead of using the descriptions (less accurate than the transcriptions?) or using the full transcriptions with LongTransformer (too heavy), sample from the transcriptions  texts of 512 characters  (kind of augmentation).
-  - make the dataloader sample equally from all classes 
-  -  train on other dataset (simpler dataset, for sanity check)
-  - Try to select hard pairs of examples (see the idea used in triplet selection in triplet loss? but here we have 2 samples instead of 3)
-
-- Architecture
-  - increase the complexity of the model - for example more FF layers / 1d convolution
-  - change the distance layer (to cosine distance for example)
-  - leave only 1 fine tuning layer, and instead add more FF layer to the distance layer
-  - discard finetuning FF layer (remain only the bert output)
-  - decrease/increase the dimension of finetuning layer
-  - change to rnn instead of bert 
-  - change to idftf instead of bert
-  - check if the vocabelry of BERT is similar to our data vocabelry (see maybe if the ids of the texts contain many UNKNOWN symbol)
-
-- General
-  - train with keras (maybe I have a bug in my code, so differnt libary may fix the issue)
-  - train with this code: https://www.analyticsvidhya.com/blog/2020/01/first-text-classification-in-pytorch/ (maybe I have a problem with no_grads)
-
 ## Libaries
 Pytorch, HuggingFace, sklearn, numpy, Plotly
 
